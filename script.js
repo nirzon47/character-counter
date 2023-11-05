@@ -5,10 +5,11 @@ const count = document.getElementById('count')
 const remaining = document.getElementById('remaining')
 
 // Event Listeners
-textarea.addEventListener('input', changeCount())
+textarea.addEventListener('input', () => updateCounts())
 
 // Functions
 const updateCounts = () => {
-	changeCount()
-	changeRemaining()
+	setCount()
+	setRemaining()
+	setRange()
 }
