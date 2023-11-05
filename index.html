@@ -10,6 +10,18 @@
 
 		<!-- Script -->
 		<script src="script.js" defer></script>
+
+		<!-- Meta tags -->
+		<meta
+			name="description"
+			content="Real time character counter made with vanilla JavaScript and Tailwind. Easter eggs inside."
+		/>
+		<meta
+			name="keywords"
+			content="real time, character, counter, javascript, tailwind, realtime character counter, real time character counter, easter eggs, javascript character counter, project"
+		/>
+		<meta name="author" content="Nirzon Taru Karmakar" />
+		<meta name="robots" content="index, follow" />
 	</head>
 	<body
 		class="w-screen h-screen grid place-content-center font-mono bg-base-content"
@@ -17,16 +29,22 @@
 		<main
 			class="p-12 shadow-xl rounded-lg max-w-[95vw] md:max-w-none bg-base-100"
 		>
+			<!-- Heading -->
 			<h1 class="text-xl font-bold pb-6 md:text-2xl font-sans">
 				Real Time Character Counter
 			</h1>
+
+			<!-- Main container -->
 			<div class="form-control mb-8">
+				<!-- Textarea input -->
 				<textarea
 					class="textarea textarea-bordered h-24 rounded-md mb-4 md:h-32 md:text-lg"
 					placeholder="Text here..."
 					id="textarea"
 					maxlength="50"
 				></textarea>
+
+				<!-- Range -->
 				<input
 					type="range"
 					min="0"
@@ -36,6 +54,8 @@
 					class="range range-secondary range-sm mb-4"
 					disabled
 				/>
+
+				<!-- Labels for count and remaining -->
 				<label class="label">
 					<span class="label-text-alt md:text-sm"
 						>Count: <span class="font-bold" id="count">0</span></span
@@ -46,6 +66,7 @@
 				</label>
 			</div>
 
+			<!-- Easter egg hint -->
 			<p
 				class="text-xs font-sans md:max-w-[400px] text-center font-semibold max-w-[80vw]"
 			>
