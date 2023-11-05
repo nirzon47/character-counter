@@ -24,3 +24,7 @@ const setRemaining = () => {
 
 	remaining.innerText = maxLength - length
 }
+
+const setRange = () => {
+	range.value = textarea.value.length
+}
