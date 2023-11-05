@@ -13,3 +13,7 @@ const updateCounts = () => {
 	setRemaining()
 	setRange()
 }
+
+const setCount = () => {
+	count.innerText = textarea.value.length
+}
