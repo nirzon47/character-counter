@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Character counter</title>
+
+		<!-- Tailwind -->
+		<link rel="stylesheet" href="styles/output.css" />
+	</head>
+	<body
+		class="w-screen h-screen grid place-content-center font-mono bg-base-content"
+	>
+		<main
+			class="p-12 shadow-xl rounded-lg max-w-[95vw] md:max-w-none bg-base-100"
+		>
+			<h1 class="text-xl font-bold pb-6 md:text-2xl">
+				Real Time Character Counter
+			</h1>
+			<div class="form-control">
+				<textarea
+					class="textarea textarea-bordered h-24 rounded-md mb-4 md:h-32 md:text-lg"
+					placeholder="Text here..."
+				></textarea>
+				<input
+					type="range"
+					min="0"
+					max="50"
+					value="0"
+					id="range"
+					class="range range-primary mb-4"
+					disabled
+				/>
+				<label class="label">
+					<span class="label-text-alt md:text-sm"
+						>Count: <span class="font-bold" id="count">50</span></span
+					>
+					<span class="label-text-alt md:text-sm"
+						>Remaining:
+						<span class="font-bold" id="remaining">&nbsp;&nbsp;</span></span
+					>
+				</label>
+			</div>
+		</main>
+	</body>
+</html>
