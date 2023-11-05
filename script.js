@@ -6,3 +6,9 @@ const remaining = document.getElementById('remaining')
 
 // Event Listeners
 textarea.addEventListener('input', changeCount())
+
+// Functions
+const updateCounts = () => {
+	changeCount()
+	changeRemaining()
+}
