@@ -17,3 +17,10 @@ const updateCounts = () => {
 const setCount = () => {
 	count.innerText = textarea.value.length
 }
+
+const setRemaining = () => {
+	const length = textarea.value.length
+	const maxLength = textarea.getAttribute('maxlength')
+
+	remaining.innerText = maxLength - length
+}
