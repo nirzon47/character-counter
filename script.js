@@ -12,6 +12,7 @@ const updateCounts = () => {
 	setCount()
 	setRemaining()
 	setRange()
+	checkForTheme()
 }
 
 const setCount = () => {
@@ -27,4 +28,28 @@ const setRemaining = () => {
 
 const setRange = () => {
 	range.value = textarea.value.length
+}
+
+const checkForTheme = () => {
+	htmlTheme = document.documentElement
+
+	switch (textarea.value) {
+		case 'dark':
+			htmlTheme.setAttribute('data-theme', 'dark')
+			break
+		case 'halloween':
+			htmlTheme.setAttribute('data-theme', 'halloween')
+			break
+		case 'cupcake':
+			htmlTheme.setAttribute('data-theme', 'cupcake')
+			break
+		case 'dracula':
+			htmlTheme.setAttribute('data-theme', 'dracula')
+			break
+		case 'emerald':
+			htmlTheme.setAttribute('data-theme', 'emerald')
+			break
+		default:
+			htmlTheme.setAttribute('data-theme', 'valentine')
+	}
 }
